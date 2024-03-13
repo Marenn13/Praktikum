@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="Kalkulator/style.css">
+<body>
+    <div class="calculator-container">
+        <h2>🧮Kalkulator Sederhana🧮</h2>
+
+        <div class="input-container">
+            <label for="Bilangan1">Bilangan1💠</label>
+            <input type="text" id="Bilangan1">
+        </div>
+        <div class="input-container">
+            <label for="Bilangan2">Bilangan2💠</label>
+            <input type="text" id="Bilangan2">
+        </div>
+        <div class="input-container">
+            <label for="Hasil">Hasil💠</label>
+            <input type="text" id="Hasil" readonly>
+        </div>
+
+       <button onclick="fjumlah()">Tambah (+)</button>
+       <button onclick="fkurang()">Kurang (-)</button>
+    </div>
+
+    <script>
+        var Bilangan1=document.getElementById("Bilangan1");
+        var Bilangan2=document.getElementById("Bilangan2");
+        var Hasil   =document.getElementById("Hasil");
+
+        function fjumlah(){
+            Hasil.value = Number(Bilangan1.value) + Number(Bilangan2.value);
+        }
+        function fkurang(){
+            Hasil.value = Number(Bilangan1.value) - Number(Bilangan2.value);
+        }
+    </script>
+</body>
+</html>
